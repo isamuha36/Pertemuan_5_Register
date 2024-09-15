@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:id="@+id/txt_homePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#1E293B"
+        android:textSize="16sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_homePage"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/link_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="#525BFF"
+        android:textSize="16sp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_homePage"
+        app:layout_constraintStart_toEndOf="@id/txt_welcome"/>
+
+    <TextView
+        android:id="@+id/txt_your1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your"
+        android:textColor="#1E293B"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/link_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textSize="16sp"
+        android:textColor="#525BFF"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@id/txt_your1"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome"/>
+
+    <TextView
+        android:id="@+id/txt_hasBeenActivated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="has been activated"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@id/link_email"
+        app:layout_constraintTop_toBottomOf="@id/link_username"/>
+
+    <TextView
+        android:id="@+id/txt_your2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_your1"/>
+
+    <TextView
+        android:id="@+id/link_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="phone"
+        android:textColor="#525BFF"
+        android:textSize="16sp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/txt_your2"
+        app:layout_constraintTop_toBottomOf="@id/link_email"/>
+
+    <TextView
+        android:id="@+id/txt_hasBeenRegistered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="has been registered"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toEndOf="@id/link_phone"
+        app:layout_constraintTop_toBottomOf="@id/txt_hasBeenActivated"/>
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
